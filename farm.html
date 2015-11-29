@@ -1,0 +1,28 @@
+<head>
+  <title>Farm</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Farm</h1>
+
+      <form class="new-seed">
+              <input type="text" name="text" placeholder="search for seeds" />
+            </form>
+
+{{> loginButtons}}  
+
+    </header>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
