@@ -11,18 +11,12 @@
               <input type="text" name="text" placeholder="search for seeds" />
             </form>
 
-{{> loginButtons}}  
+  {{> loginButtons}}
 
     </header>
-
-    <ul>
-      {{#each tasks}}
-        {{> task}}
-      {{/each}}
-    </ul>
   </div>
 </body>
 
-<template name="task">
+<template name="login">
   <li>{{text}}</li>
 </template>
